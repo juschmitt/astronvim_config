@@ -13,7 +13,7 @@ return {
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.completion.copilot-cmp" },
   { import = "astrocommunity.motion.leap-nvim" },
-  { import = "astrocommunity.editing-support.true-zen-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.color.twilight-nvim" },
   { import = "astrocommunity.note-taking.zk-nvim" },
   -- import/override with your plugins folder
