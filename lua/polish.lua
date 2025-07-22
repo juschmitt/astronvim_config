@@ -5,6 +5,20 @@
 ---@type LazySpec
 return {
   {
+    vim.lsp.enable "kotlin-lsp",
+    vim.lsp.config("kotlin-lsp", {
+      filetypes = { "kotlin" },
+      cmd = { "kotlin-lsp", "--stdio" },
+      root_markers = {
+        "settings.gradle", -- Gradle (multi-project)
+        "settings.gradle.kts", -- Gradle (multi-project)
+        "pom.xml", -- Maven
+        "build.gradle", -- Gradle
+        "build.gradle.kts", -- Gradle
+        "workspace.json", -- Used to integrate your own build system
+      },
+    }),
+
     -- convert current buffer to PDF
     vim.api.nvim_create_user_command("NoteToPDF", function()
       local pandoc_opts = "--pdf-engine=weasyprint "
