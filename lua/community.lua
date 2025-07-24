@@ -16,5 +16,5 @@ return {
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
   { import = "astrocommunity.color.twilight-nvim" },
   { import = "astrocommunity.note-taking.zk-nvim" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.fuzzy-finder.snacks-picker" },
 }
